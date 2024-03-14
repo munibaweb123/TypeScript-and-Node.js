@@ -1,10 +1,16 @@
 "use strict";
-let ordinal_Num = ["1st", "5th", "6th", "7th", "8th", "9th", "2nd", "3rd", "4th"];
-for (let i = 0; i < ordinal_Num.length; i++) {
-    if (ordinal_Num.sort()) {
-        console.log("\n" + ordinal_Num[i]);
+let ordinal_Num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+ordinal_Num.forEach(ordinal_Num => {
+    let suffix = 'th';
+    if (ordinal_Num == 1) {
+        suffix = "st";
     }
-    else {
-        ordinal_Num.sort();
+    else if (ordinal_Num == 2) {
+        suffix = "nd";
     }
-}
+    else if (ordinal_Num == 3) {
+        suffix = "rd";
+    }
+    console.log(`${ordinal_Num}${suffix}`);
+});
