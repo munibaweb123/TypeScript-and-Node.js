@@ -15,5 +15,5 @@ ordinal_Num.forEach(ordinal_Num=>{
     }else if(ordinal_Num==3){
         suffix="rd"
     }
-    console.log(`${ordinal_Num}${suffix}`)
+    console.log(`${ordinal_Num}${suffix}`);
 })
