@@ -6,9 +6,9 @@ let uppercase = personName.toUpperCase();
 let titlecase = personName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 if (personName !== null && personName !== '') {
     alert(`As salam u alaikum ${personName}, here are your name in:
-    lowercase:${lowercase}
-    uppercase:${uppercase}
-    titlecase:${titlecase}`);
+    lowercase: ${lowercase}
+    uppercase: ${uppercase}
+    titlecase: ${titlecase}`);
 }
 else {
     alert('please fill your name!');

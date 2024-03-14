@@ -7,9 +7,9 @@ let titlecase:string = personName.split(' ').map(word=>word.charAt(0).toUpperCas
 
 if(personName !==null && personName!==''){
     alert(`As salam u alaikum ${personName}, here are your name in:
-    lowercase:${lowercase}
-    uppercase:${uppercase}
-    titlecase:${titlecase}`)
+    lowercase: ${lowercase}
+    uppercase: ${uppercase}
+    titlecase: ${titlecase}`)
     
 }
 else{
