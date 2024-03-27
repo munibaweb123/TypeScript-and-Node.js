@@ -6,10 +6,10 @@
 // color or an optional feature. 
 // Print the Object that’s returned to make sure all the information was
 // stored correctly.
-function make_car(carinfo) {
-    return carinfo;
+function make_car(manufacturer, model, ...options) {
+    let car = { manufacturer, model, options };
+    options.forEach(([key, value]) => key = value);
+    return car;
 }
-let new_car1 = make_car({ manufacturer: "subaru", model_name: "outback", color: "white", tow_package: true });
-let new_car2 = make_car({ manufacturer: "honda", model_name: "accord" });
-console.log("car #1 info: ", new_car1);
-console.log("car #2 info: ", new_car2);
+console.log(make_car("Toyota", "Corolla", ["color", "red"], ["year", 2020]));
+console.log(make_car("Ford", "Fiesta", ["color", "blue"], ["sunroof", true]));
