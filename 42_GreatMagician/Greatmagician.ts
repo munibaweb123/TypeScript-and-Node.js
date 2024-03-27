@@ -4,11 +4,19 @@
 // see that the list has actually been modified.
 
 let magician_name:string[]=["Tom","Jerry","Harry potter"];
+function show_magicians(magician:string[]){
+    magician.forEach(original=>{
+        console.log(original);
+    });
+        
+    
+}
 
 function make_great(names:string[]){
     for(let i=0;i<names.length;i++){
-    console.log("The Great "+names[i]);
+        names[i] = names[i] + " the Great";
     }
 }
-make_great(magician_name);
+show_magicians(magician_name);// Modifies the original array
+make_great(magician_name);// Shows modified names
 
