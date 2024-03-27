@@ -6,28 +6,28 @@
 
 
 let magician_name:string[]=["Tom","Jerry","Harry potter"];
-
-
-
-function show_magicians(names:string[]){
-    for(let i=0;i<names.length;i++){
-    console.log(names[i]);
-    }
-    
-
-
+function show_magicians(magician:string[]){
+magician.forEach(magicians=>{
+    console.log(magicians)
+})
 }
-function make_great(names:string[]){
-    for(let i=0;i<names.length;i++){
-    console.log(names[i]+" the great");
-    }
+
+
+
+function make_great(magicians: string[]): string[] {
+    let greatMagicians:string[] = [];
+    magicians.forEach(magician => {
+        greatMagicians.push(`${magician} the Great`);
+    });
+    return greatMagicians;
 }
-console.log("\nMagician's name:\n")
-show_magicians(magician_name)
-console.log("\nThe Great Magicians:\n")
-make_great(magician_name);
-console.log("\nOriginal Magicians:\n")
-show_magicians(magician_name);
+
+let greatMagicians = make_great(magician_name.slice()); // Creates a new modified array
+console.log("Original magicians:");
+show_magicians(magician_name); // Shows original names
+console.log("\nGreat magicians:");
+show_magicians(greatMagicians); // Shows modified names
+
 
 
 
