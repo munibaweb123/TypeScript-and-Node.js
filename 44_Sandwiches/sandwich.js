@@ -4,20 +4,11 @@
 // items as the function call provides, and it should print a summary of the sandwich
 // that is being ordered. Call the function three times, using a different number
 // of arguments each time.
-let sandwich1 = ['roast beef', 'cheddar cheese', 'lettuce', 'honey dijon'];
 let sandwich2 = ['turkey', 'apple slices', 'honey mustard'];
 let sandwich3 = ['shami kabab', 'cucumber', 'tomatoes', 'chilli sauce', 'lettuce', 'mayo', 'ketchup'];
-function make_sandwiches(items) {
-    console.log("\nMake a sandwich with given items:");
-    for (let i = 0; i < items.length; i++) {
-        console.log(i + 1, "\t", items[i]);
-    }
-    for (let i = 0; i < items.length; i++) {
-        console.log(i + 1, "adding item \"", items[i], "\"to your sandwich");
-    }
-    console.log("\n\thurray!, your sandwich is ready.");
-    return items;
+function make_sandwich(...items) {
+    console.log(`Making a sandwich with: ${items.join(', ')}.`);
 }
-make_sandwiches(sandwich1);
-make_sandwiches(sandwich2);
-make_sandwiches(sandwich3);
+make_sandwich('roast beef', 'cheddar cheese', 'lettuce', 'honey dijon');
+make_sandwich('turkey', 'apple slices', 'honey mustard');
+make_sandwich('shami kabab', 'cucumber', 'tomatoes', 'chilli sauce', 'lettuce', 'mayo', 'ketchup');
