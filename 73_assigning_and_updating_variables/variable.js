@@ -7,8 +7,8 @@ Explain & TIP: In JavaScript, you can assign a value to a variable with = and la
 // }
 function updateVariable() {
     let number = 10;
-    console.log("initial value: " + number);
+    console.log("initial value: " + number); //print 10
     number = 20;
-    console.log("updated value: " + number);
+    console.log("updated value: " + number); //print 20
 }
 updateVariable();
