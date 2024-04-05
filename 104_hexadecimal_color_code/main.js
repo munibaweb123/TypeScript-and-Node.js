@@ -1,8 +1,8 @@
 "use strict";
-/**Question 105: Simulate a dice roll using JavaScript and return a random integer between 1 and 6.
-
-Explain & TIP: Simulating a dice roll involves randomly choosing an integer between 1 and 6. Use Math.random() along with some arithmetic to achieve this range. */
-function rollDice() {
-    return Math.floor(Math.random() * 6) + 1;
+// This function generates a random hexadecimal color code
+function getRandomHexColor() {
+    const color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+    return color; // Returns the random color code
 }
-console.log(rollDice());
+console.log(getRandomHexColor()); // Outputs a random hex color code like #ff3e12
+// We generate a random number, convert it to hexadecimal, and ensure it's 6 characters long.
