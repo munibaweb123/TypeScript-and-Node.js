@@ -6,6 +6,6 @@ Explain & TIP: Arrow functions can take zero, one, or multiple parameters. When 
 const multiplyParameters=(...numbers:number[])=>
    numbers.reduce((total,number)=>total*number,1);
 
-console.log(multiplyParameters(1,2,3));
+console.log(multiplyParameters(1,2,3));//output:6
 // This function uses the rest parameter syntax to take any number of arguments, then multiplies them together.
 
