@@ -1,46 +1,46 @@
-// //function declaration
-// function showMessage() {
-//     alert( 'Hello everyone!' );
-//   }
-//   showMessage(); // function call
+//function declaration
+function showMessage() {
+    alert( 'Hello everyone!' );
+  }
+  showMessage(); // function call
 
-//   //Local variable
-//   function showMessage() {
-//     let message = "Hello, I'm learning JavaScript!"; // local variable
+  //Local variable
+  function showMessage() {
+    let message = "Hello, I'm learning JavaScript!"; // local variable
   
-//     alert( message );
-//   }
+    alert( message );
+  }
   
-//   showMessage(); // Hello, I'm learning JavaScript!
+  showMessage(); // Hello, I'm learning JavaScript!
   
-//   alert( message ); // <-- Error! The variable is local to the function
+  alert( message ); // <-- Error! The variable is local to the function
 
-//   //Outer variables
-//   //function can access outer/global variables
+  //Outer variables
+  //function can access outer/global variables
 
-//   let userName = 'John';
+  let userName = 'John';
 
-// function showMessage() {
-//   let message = 'Hello, ' + userName;
-//   alert(message);
-// }
+function showMessage() {
+  let message = 'Hello, ' + userName;
+  alert(message);
+}
 
-// showMessage(); // Hello, John
+showMessage(); // Hello, John
 
-// let userName2 = 'John';
+let userName2 = 'John';
 
-// function showMessage() {
-//   userName2 = "Bob"; // (1) changed the outer variable
+function showMessage() {
+  userName2 = "Bob"; // (1) changed the outer variable
 
-//   let message = 'Hello, ' + userName2;
-//   alert(message);
-// }
+  let message = 'Hello, ' + userName2;
+  alert(message);
+}
 
-// alert( userName2 ); // John before the function call
+alert( userName2 ); // John before the function call
 
-// showMessage();
+showMessage();
 
-// alert( userName2 ); // Bob, the value was modified by the function
+alert( userName2 ); // Bob, the value was modified by the function
 
 function showMessage(from, text) {
     if (text === undefined) {

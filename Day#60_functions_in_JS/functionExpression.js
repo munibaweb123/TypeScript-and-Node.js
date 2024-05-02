@@ -8,16 +8,16 @@ let sayHi = function() {
 func(); // Welcome to function expression    // (3) run the copy (it works)!
 sayHi(); // Welcome to function expression    //     this still works too (why wouldn't it)
 
-function ask(question, yes, no) {
+function ask(question, yes, no) { // call back functions
     if (confirm(question)) yes()
     else no();
   }
   
-  function showOk() {
+  function showOk() { //if yes, showOk
     alert( "You agreed." );
   }
   
-  function showCancel() {
+  function showCancel() { //if no, showCancel
     alert( "You canceled the execution." );
   }
   
