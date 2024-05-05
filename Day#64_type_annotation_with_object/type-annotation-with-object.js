@@ -1,4 +1,5 @@
 "use strict";
+// Type annotation with object:
 let personExOne;
 personExOne = {
     name: "Alice",
@@ -22,3 +23,4 @@ let personExTwo = {
 };
 console.log(personExOne); // calling whole object of personExOne
 console.log(personExTwo.name); // calling name-->Alice
+console.log(personExOne.address); // calling whole address

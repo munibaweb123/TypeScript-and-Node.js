@@ -32,7 +32,7 @@ let personExTwo: {
     name: "Alice",
     age: 30,
     jobTitle: "Engineer",
-    address: {
+    address: { //nested object
       street: "123 Main St",
       city: "Wonderland",
     },
@@ -40,3 +40,4 @@ let personExTwo: {
 
   console.log(personExOne);// calling whole object of personExOne
   console.log(personExTwo.name);// calling name-->Alice
+  console.log(personExOne.address); // calling whole address
