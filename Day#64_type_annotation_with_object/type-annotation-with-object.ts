@@ -1,4 +1,5 @@
-let personExOne:{
+// Type annotation with object:
+let personExOne:{ //define object and its properties
     name:string;
     age:number;
     jobTitle?:string;
@@ -8,7 +9,7 @@ let personExOne:{
     };
 };
 
-personExOne = {
+personExOne = { //initialize it with its properties
   name: "Alice",
   age: 30,
   jobTitle: "Engineer",
