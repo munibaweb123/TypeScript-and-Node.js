@@ -12,7 +12,7 @@ type FirstType = {
     phone: string;
   };
   
-  type CombinedType = FirstType & SecondType;
+  type CombinedType = FirstType & SecondType; // intersection using &
   
   const person: CombinedType = {
     name: "John Doe",
